@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Artesano</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">Inicio</a>
+        <a href="./agregar-hincha.html">Registrar Hincha</a>
+        <a href="./agregar-artesano.html">Registrar Artesano</a>
+        <a href="./ver-hinchas.html">Ver Hinchas</a>
+        <a href="./ver-artesanos.html">Ver Artesanos</a>
+    </header>
+    <div>
+        <form>
+            <div class="region">
+                <label for="region">Seleccione su región de procedencia:</label>
+                <select name="region" id="region">
+                    <option value="Tarapacá">I Región: Arica y Parinacota</option>
+                    <option value="Antofagasta">II Región</option>
+                    <option value="Atacama">III Región</option>
+                    <option value="Coquimbo">IV Región</option>
+                    <option value="Valparaíso">V Región</option>
+                    <option value="Región del Libertador Gral. Bernardo O’Higgins">VI Región</option>
+                    <option value="Región del Maule">VII Región</option>
+                    <option value="Región del Biobío">VIII Región</option>
+                    <option value="Región de la Araucanía">IX Región</option>
+                    <option value="Región de Los Lagos">X Región</option>
+                    <option value="Región Aisén del Gral. Carlos Ibáñez del Campo">XI Región</option>
+                    <option value="Región Metropolitana de Santiago">Región Metropolitana</option>
+                    <option value="Región de Magallanes y de la Antártica Chilena">XII Región</option>
+                    <option value="Región de Los Ríos">XIV Región</option>
+                    <option value="Arica y Parinacota">XV Región</option>
+                    <option value="Región de Ñuble">XVI Región</option>
+                </select>
+            </div>
+            <div class="comuna">
+                <label for="comuna">Seleccione Región</label>
+                <select name="comuna" id="comuna" disabled="disabled">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="artesanias">
+                <select name="artesanias" id="artesanias">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="descripcion">
+                <label for="descripcion">Describas sus artesanias</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+            </div>
+            <div class="fotos">
+                <input type="image" src="" alt="">
+            </div>
+            <div class="nombre">
+                <label for="name">Ingrese su nombre:</label>
+                <input type="text" name="name" id="name" maxlength="80">
+            </div>
+            <div class="email">
+                <label for="mail">Ingrese su correo electronico:</label>
+                <input type="email" name="mail" id="mail" maxlength="30">
+            </div>
+            <div class="telefono">
+                <label for="phone">Ingrese un celular de contacto</label>
+                <input type="number" name="phone" id="phone" maxlength="15">
+            </div>
+
+            <button id="Registrar-Hincha">Registrar Hincha</button>
+        </form>
+    </div>
+    <footer>
+        <p>
+            <small>Pagina desarrollada por Daniel Radrigan para el curso de Desarrollo de Aplicaciones WEB</small>
+        </p>
+    </footer>
+</body>
+</html>
