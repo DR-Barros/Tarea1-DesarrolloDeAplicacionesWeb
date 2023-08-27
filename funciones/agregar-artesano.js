@@ -18,11 +18,10 @@ const COMUNAS = {
 }
 
 let boton = document.getElementById("Registrar-Artesano");
-boton.addEventListener("click", (event)=>{event.preventDefault()});
+boton.addEventListener("click", (event)=>{event.preventDefault(); agregarArtesano()});
 let comuna = document.getElementById("comuna")
 let region =document.getElementById("region");
 region.addEventListener("change",(event)=>{
-    console.log(region.value)
     comuna.disabled = false;
     let listaComunas = COMUNAS[region.value]
     let str = ""
@@ -46,3 +45,39 @@ ART2.addEventListener("change",(event)=>{
     }
 })
 const ART3 = document.getElementById("artesanias3")
+
+
+function agregarArtesano(){
+    console.log("Agregando Artesano")
+    //Chequea que se introduzca la region y la comuna
+    if(region.value == ""){
+        console.log("Seleccione su región")
+    } else if(comuna.value == ""){
+        console.log("Seleccione su comuna")
+    }
+
+    //chequear el tipo artesania
+    if(ART1.value == ""){
+        console.log("Seleccione al menos 1 tipo de artesania")
+    }
+
+    //Fotos artesania
+    
+
+
+    //Nombre
+    const NAME = document.getElementById("name")
+    if(NAME.value.length<3 || NAME.value.length> 80){
+        console.log("Ingrese un nombre de entre 3 y 80 caracteres")
+    }
+    const EMAIL = document.getElementById("mail")
+    const EXP =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+    if (!EXP.exec(EMAIL.value)){
+        console.log("Debe ser con el formato de correo")
+    }
+    const PHONE = document.getElementById("phone")
+    /* const EXP_PHONE = /^[+]?(56)?9(\d){8}\d$/
+    if(!EXP_PHONE.exec(PHONE.value)){
+        console.log("Ingrese un numero de telefono correcto")
+    } */
+}
