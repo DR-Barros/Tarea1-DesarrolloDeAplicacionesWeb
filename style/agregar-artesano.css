@@ -13,8 +13,12 @@ header a{
     padding: 5px;
 }
 
-.hero{
-    height: 500px;
+.container{
+    margin: 30px 25px;
+    text-align: center;
+}
+form div{
+    margin-bottom: 10px;
 }
 
 
