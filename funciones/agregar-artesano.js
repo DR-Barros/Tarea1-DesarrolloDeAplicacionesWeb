@@ -31,24 +31,26 @@ region.addEventListener("change",(event)=>{
     comuna.innerHTML = str
 })
 
-const ART1 = document.getElementById("artesanias")
-ART1.addEventListener("change",(event)=>{
-    ART2.disabled = false;
+const ARTESANIAS = document.getElementsByName("artesania")
+let cantArtesanias = 0;
+ARTESANIAS.forEach(e =>{
+    e.addEventListener("change", function() {
+        if(this.checked){
+            cantArtesanias += 1;
+            if(cantArtesanias>=3){
+                ARTESANIAS.forEach(e=>{if(!e.checked) e.disabled=true})
+            }
+        } else{
+            cantArtesanias -= 1;
+            if(cantArtesanias < 3){
+                ARTESANIAS.forEach(e=>{e.disabled = false})
+            }
+        }
+    })
 })
-const ART2 = document.getElementById("artesanias2")
-ART2.addEventListener("change",(event)=>{
-    if(ART2.value != ""){
-        ART3.disabled = false;
-    } else {
-        ART3.disabled = true;
-        ART3.value = ""
-    }
-})
-const ART3 = document.getElementById("artesanias3")
 
 
 function agregarArtesano(){
-    console.log("Agregando Artesano")
     //Chequea que se introduzca la region y la comuna
     if(region.value == ""){
         console.log("Seleccione su región")
@@ -57,10 +59,13 @@ function agregarArtesano(){
     }
 
     //chequear el tipo artesania
-    if(ART1.value == ""){
-        console.log("Seleccione al menos 1 tipo de artesania")
+    let cantArt = 0
+    ARTESANIAS.forEach(e=>{if(e.checked) cantArt+=1})
+    if(cantArt == 0){
+        console.log("Seleccione al menos una artesania")
+    } else if (cantArt > 3){
+        console.log("Seleccione maximo 3 artesanias")
     }
-
     //Fotos artesania
     
 
