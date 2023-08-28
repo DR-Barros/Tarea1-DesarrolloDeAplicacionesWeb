@@ -14,21 +14,45 @@ header a{
 }
 
 .container{
-    margin: 30px 25px;
+    margin: 30px 15px;
     text-align: center;
 }
 form div{
     margin-bottom: 10px;
 }
-
-
-
-
-
+fieldset{
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr ;
+    border-radius: 5px;
+    border: solid black 1px;
+}
 footer{
     padding: 5px;
     text-align: center;
 }
 footer p{
     margin: 0;
+}
+
+@media (min-width: 420px){
+
+}
+@media (min-width: 768px){
+    .container{
+        margin: 30px 25px;
+    }
+    fieldset{
+        grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr ;
+    }
+}
+@media (min-width: 1024px){
+    
+}
+@media (min-width: 1440px){
+    .container{
+        margin: 30px 35px;
+    }
+    fieldset{
+        grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
+    }
 }

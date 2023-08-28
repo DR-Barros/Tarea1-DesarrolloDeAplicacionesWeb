@@ -20,11 +20,10 @@ const COMUNAS = {
 
 
 let boton = document.getElementById("Registrar-Hincha");
-boton.addEventListener("click", (event)=>{event.preventDefault()});
+boton.addEventListener("click", (e)=>{validar(e)});
 let comuna = document.getElementById("comuna")
 let region =document.getElementById("region");
 region.addEventListener("change",(event)=>{
-    console.log(region.value)
     comuna.disabled = false;
     let listaComunas = COMUNAS[region.value]
     let str = ""
@@ -34,3 +33,6 @@ region.addEventListener("change",(event)=>{
     comuna.innerHTML = str
 })
 
+function validar(event){
+    event.preventDefault()
+}
