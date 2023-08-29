@@ -20,17 +20,17 @@
         <form>
             <div class="deportes">
                 <fieldset>
-                    <legend>Seleccione los deportes de su interes (máximo 3)</legend>
+                    <legend id="deportes-legend">Seleccione los deportes de su interes (máximo 3) <span id="depor-span"></span></legend>
                     <input type="checkbox" name="deportes" id="Clavados" value="Clavados">
                     <label for="Clavados">Clavados</label>
                     <input type="checkbox" name="deportes" id="Natación" value="Natación">
                     <label for="Natación">Natación</label>
-                    <input type="checkbox" name="deportes" id="Natación artística" value="Natación artística">
-                    <label for="Natación artística">Natación artística</label>
-                    <input type="checkbox" name="deportes" id="Polo acuático" value="Polo acuático">
-                    <label for="Polo acuático">Polo acuático</label>
-                    <input type="checkbox" name="deportes" id="Natación en Aguas abiertas" value="Natación en Aguas abiertas">
-                    <label for="Natación en Aguas abiertas">Natación en Aguas abiertas</label>
+                    <input type="checkbox" name="deportes" id="Natación-artística" value="Natación artística">
+                    <label for="Natación-artística">Natación artística</label>
+                    <input type="checkbox" name="deportes" id="Polo-acuático" value="Polo acuático">
+                    <label for="Polo-acuático">Polo acuático</label>
+                    <input type="checkbox" name="deportes" id="Natación-en-Aguas-abiertas" value="Natación en Aguas abiertas">
+                    <label for="Natación-en-Aguas-abiertas">Natación en Aguas abiertas</label>
                     <input type="checkbox" name="deportes" id="Maratón" value="Maratón">
                     <label for="Maratón">Maratón</label>
                     <input type="checkbox" name="deportes" id="Marcha" value="Marcha">
@@ -43,8 +43,8 @@
                     <label for="Balonmano">Balonmano</label>
                     <input type="checkbox" name="deportes" id="Básquetbol" value="Básquetbol">
                     <label for="Básquetbol">Básquetbol</label>
-                    <input type="checkbox" name="deportes" id="Básquetbol 3x3" value="Básquetbol 3x3">
-                    <label for="Básquetbol 3x3">Básquetbol 3x3</label>
+                    <input type="checkbox" name="deportes" id="Básquetbol-3x3" value="Básquetbol 3x3">
+                    <label for="Básquetbol-3x3">Básquetbol 3x3</label>
                     <input type="checkbox" name="deportes" id="Béisbol" value="Béisbol">
                     <label for="Béisbol">Béisbol</label>
                     <input type="checkbox" name="deportes" id="Boxeo" value="Boxeo">
@@ -53,16 +53,16 @@
                     <label for="Bowling">Bowling</label>
                     <input type="checkbox" name="deportes" id="Breaking" value="Breaking">
                     <label for="Breaking">Breaking</label>
-                    <input type="checkbox" name="deportes" id="Canotaje Slalom" value="Canotaje Slalom">
-                    <label for="Canotaje Slalom">Canotaje Slalom</label>
-                    <input type="checkbox" name="deportes" id="Canotaje de velocidad" value="Canotaje de velocidad">
-                    <label for="Canotaje de velocidad">Canotaje de velocidad</label>
-                    <input type="checkbox" name="deportes" id="BMX Freestyle" value="BMX Freestyle">
-                    <label for="BMX Freestyle">BMX Freestyle</label>
-                    <input type="checkbox" name="deportes" id="BMX Racing" value="BMX Racing">
-                    <label for="BMX Racing">BMX Racing</label>
-                    <input type="checkbox" name="deportes" id="Mountain Bike" value="Mountain Bike">
-                    <label for="Mountain Bike">Mountain Bike</label>
+                    <input type="checkbox" name="deportes" id="Canotaje-Slalom" value="Canotaje Slalom">
+                    <label for="Canotaje-Slalom">Canotaje Slalom</label>
+                    <input type="checkbox" name="deportes" id="Canotaje-de-velocidad" value="Canotaje de velocidad">
+                    <label for="Canotaje-de-velocidad">Canotaje de velocidad</label>
+                    <input type="checkbox" name="deportes" id="BMX-Freestyle" value="BMX Freestyle">
+                    <label for="BMX-Freestyle">BMX Freestyle</label>
+                    <input type="checkbox" name="deportes" id="BMX-Racing" value="BMX Racing">
+                    <label for="BMX-Racing">BMX Racing</label>
+                    <input type="checkbox" name="deportes" id="Mountain-Bike" value="Mountain Bike">
+                    <label for="Mountain-Bike">Mountain Bike</label>
                     <input type="checkbox" name="deportes" id="Ciclismo pista" value="Ciclismo pista">
                     <label for="Ciclismo pista">Ciclismo pista</label>
                     <input type="checkbox" name="deportes" id="Ciclismo ruta" value="Ciclismo ruta">
@@ -144,8 +144,9 @@
                 </fieldset>
             </div>
             <div class="region">
-                <label for="region">Seleccione su región de procedencia:</label>
+                <label for="region">Seleccione su región de procedencia: <span id="region-span"></span></label>
                 <select name="region" id="region">
+                    <option value="">-Elija una de las siguientes comunas-</option>
                     <option value="Tarapacá">I Región: Arica y Parinacota</option>
                     <option value="Antofagasta">II Región</option>
                     <option value="Atacama">III Región</option>
@@ -165,7 +166,7 @@
                 </select>
             </div>
             <div class="comuna">
-                <label for="comuna">Seleccione Región</label>
+                <label for="comuna">Seleccione Región <span id="comuna-span"></span></label>
                 <select name="comuna" id="comuna" disabled="disabled">
                     <option value="">Elja primero su región</option>
                 </select>
@@ -178,22 +179,21 @@
                 </select>
             </div>
             <div class="nombre">
-                <label for="name">Ingrese su nombre:</label>
-                <input type="text" name="name" id="name" maxlength="80" autocomplete="name">
+                <label for="name">Ingrese su nombre: <span id="name-span"></span></label>
+                <input type="text" name="name" id="name" maxlength="80" autocomplete="name" required>
             </div>
             <div class="email">
-                <label for="mail">Ingrese su correo electronico:</label>
-                <input type="email" name="mail" id="mail" maxlength="30" autocomplete="email">
+                <label for="mail">Ingrese su correo electronico: <span id="email-span"></span></label>
+                <input type="email" name="mail" id="mail" maxlength="30" autocomplete="email" required>
             </div>
             <div class="telefono">
-                <label for="phone">Ingrese un celular de contacto</label>
-                <input type="tel" name="phone" id="phone" maxlength="15" autocomplete="tel">
+                <label for="phone">Ingrese un celular de contacto <span id="phone-span"></span></label>
+                <input type="tel" name="phone" id="phone" maxlength="15" autocomplete="tel" required>
             </div>
             <div class="comentarios">
                 <label for="coment">Comentarios adicionales</label>
                 <textarea name="coment" id="coment" cols="30" rows="10" maxlength="80"></textarea>
             </div>
-
             <button id="Registrar-Hincha">Registrar Hincha</button>
         </form>
     </div>

@@ -55,29 +55,44 @@ function validar(event){
     //Evaluar condicion de deportes
     let cnt = 0;
     DEPORTES.forEach(e => {if (e.checked) cnt++})
+    let deporSpan = document.getElementById("depor-span")
     if (cnt < 1){
-        console.log("Elige algun deporte")
+        deporSpan.innerText = "Elige al menos 1 deporte"
     } else if (cnt > 3){
-        console.log("Elige maximo 3 deportes")
+        deporSpan.innerText = "Elige maximo 3 deportes"
+    } else {
+        deporSpan.innerText = ""
     }
 
     // chequear que ponga region y comuna
+    let regionSpan = document.getElementById("region-span")
+    let comunaSpan = document.getElementById("comuna-span")
     if (region.value == ""){
-        console.log("Seleccione su región")
+        regionSpan.innerText = "Seleccione su región"
     } else if(comuna.value == ""){
-        console.log("Seleccione su comuna")
+        regionSpan.innerText = ""
+        comunaSpan.innerText = "Seleccione su comuna"
+    } else {
+        regionSpan.innerText = ""
+        comunaSpan.innerText = ""
     }
 
     //Nombre
     const NAME = document.getElementById("name")
-    if(NAME.value.length<3 || NAME.value.length> 80){
-        console.log("Ingrese un nombre de entre 3 y 80 caracteres")
+    let nameSpan = document.getElementById("name-span")
+    if(NAME.value.length<3){
+        nameSpan.innerText = "Ingrese un nombre de minimo 3 caracteres"
+    } else if (NAME.value.length> 80){
+        nameSpan.innerText = "El nombre debe ser de maximo 80 caracteres"
+    } else {
+        nameSpan.innerText = ""
     }
 
     //Mail
     const EMAIL = document.getElementById("mail")
     const EXP =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+    let emailSpan = document.getElementById("email-span")
     if (!EXP.exec(EMAIL.value)){
-        console.log("Debe ser con el formato de correo")
+        emailSpan.innerText = "Debe ser con el formato de correo"
     }
 }

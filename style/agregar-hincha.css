@@ -1,6 +1,9 @@
 body{
     margin: 0;
 }
+span{
+    color: red;
+}
 header{
     margin: 0;
     border-bottom: 2px solid black;
