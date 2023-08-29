@@ -75,6 +75,8 @@ function agregarArtesano(){
     if(NAME.value.length<3 || NAME.value.length> 80){
         console.log("Ingrese un nombre de entre 3 y 80 caracteres")
     }
+
+    //Mail
     const EMAIL = document.getElementById("mail")
     const EXP =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
     if (!EXP.exec(EMAIL.value)){
