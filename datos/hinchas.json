@@ -1,0 +1,39 @@
+{
+    "hinchas":[
+        {
+            "Nombre": "Javiera Vidal",
+            "Comuna":"La Reina",
+            "Deportes": ["Golf", "Lucha", "Surf"],
+            "Transporte": "particular",
+            "Celular": "+ 56904040404"
+        },
+        {
+            "Nombre": "Juan Radrigán",
+            "Comuna":"Ñuñoa",
+            "Deportes": ["Karate"],
+            "Transporte": "locomoción Pública",
+            "Celular": "+56987654321"
+        },
+        {
+            "Nombre": "Humberto Suazo",
+            "Comuna":"San Antonio",
+            "Deportes": ["Rugby 7", "Tiro"],
+            "Transporte": "particular",
+            "Celular": "+56909090909"
+        },
+        {
+            "Nombre": "Julio Rodriguez",
+            "Comuna":"Punta Arenas",
+            "Deportes": ["Vela", "Remo", "Surf"],
+            "Transporte": "locomoción Pública",
+            "Celular": "+56912345678"
+        },
+        {
+            "Nombre": "Lucas Asadi",
+            "Comuna":"Puente Alto",
+            "Deportes": ["Gimnasia rítmica"],
+            "Transporte": "particular",
+            "Celular": "+56955533322"
+        }
+    ]
+}

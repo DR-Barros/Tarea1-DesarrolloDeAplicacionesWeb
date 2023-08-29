@@ -40,7 +40,7 @@ const LISTADOHINCHAS = document.getElementById("tabla");
 
 let str = "<tr><td>Nombre</td><td>Comuna</td><td>Deportes</td><td>Modo Transporte</td><td>Numero celular</td></tr>"
 HINCHA.forEach(e =>{
-    str += "<tr><td>"+e.Nombre+"</td>"
+    str += "<tr><td><a href='./informacion-hincha.html?Nombre="+e.Nombre+"'>"+e.Nombre+"</a></td>"
     str += "<td>"+e.Comuna+"</td><td>"
     e.Deportes.forEach(e =>{str += " "+ e + " "})
     str += "</td><td>"+e.Transporte+"</td>"
