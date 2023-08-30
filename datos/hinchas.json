@@ -2,37 +2,49 @@
     "hinchas":[
         {
             "Nombre": "Javiera Vidal",
+            "Region": "Región Metropolitana de Santiago",
             "Comuna":"La Reina",
             "Deportes": ["Golf", "Lucha", "Surf"],
             "Transporte": "particular",
+            "Email": "JavieraVidal@chile.cl",
             "Celular": "+ 56904040404"
         },
         {
             "Nombre": "Juan Radrigán",
+            "Region": "Región Metropolitana de Santiago",
             "Comuna":"Ñuñoa",
             "Deportes": ["Karate"],
             "Transporte": "locomoción Pública",
-            "Celular": "+56987654321"
+            "Email": "Juan.Radrigan@chile.cl",
+            "Celular": "+56987654321",
+            "Comentario": "Estoy muy emocionado por poder ir a un Panamericano"
         },
         {
             "Nombre": "Humberto Suazo",
+            "Region": "Valparaíso",
             "Comuna":"San Antonio",
             "Deportes": ["Rugby 7", "Tiro"],
             "Transporte": "particular",
+            "Email": "PlanetaGol@chile.cl",
             "Celular": "+56909090909"
         },
         {
             "Nombre": "Julio Rodriguez",
+            "Region": "Región de Magallanes y de la Antártica Chilena",
             "Comuna":"Punta Arenas",
             "Deportes": ["Vela", "Remo", "Surf"],
             "Transporte": "locomoción Pública",
-            "Celular": "+56912345678"
+            "Email": "JRodriguez@chile.cl",
+            "Celular": "+56912345678",
+            "Comentario": "Vamos chilito"
         },
         {
             "Nombre": "Lucas Asadi",
+            "Region": "Región Metropolitana de Santiago",
             "Comuna":"Puente Alto",
             "Deportes": ["Gimnasia rítmica"],
             "Transporte": "particular",
+            "Email": "LucasAsadi@chile.cl",
             "Celular": "+56955533322"
         }
     ]
