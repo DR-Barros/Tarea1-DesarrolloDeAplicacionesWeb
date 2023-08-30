@@ -6,7 +6,7 @@
             "Celular": "+56954632718",
             "Region": "Coquimbo",
             "Comuna": "Coquimbo",
-            "Tipo": [],
+            "Tipo": ["madera"],
             "Descripcion": "",
             "Fotos": []
         },
@@ -16,7 +16,7 @@
             "Celular": "+56960504030",
             "Region": "Atacama",
             "Comuna": "Caldera",
-            "Tipo": [],
+            "Tipo": ["metal", "cuero"],
             "Descripcion": "",
             "Fotos": []
         },
@@ -26,7 +26,7 @@
             "Celular": "+56945671238",
             "Region": "Tarapacá",
             "Comuna": "Iquique",
-            "Tipo": [],
+            "Tipo": ["cuero", "joyas"],
             "Descripcion": "",
             "Fotos": []
         },
@@ -36,7 +36,7 @@
             "Celular": "+56944332211",
             "Region": "Región de Los Ríos",
             "Comuna": "Valdivia",
-            "Tipo": [],
+            "Tipo": ["madera", "metal"],
             "Descripcion": "",
             "Fotos": []
         },
@@ -46,7 +46,7 @@
             "Celular": "+56990804321",
             "Region": "Región Aisén del Gral. Carlos Ibáñez del Campo",
             "Comuna": "Coihaique",
-            "Tipo": [],
+            "Tipo": ["otro tipo"],
             "Descripcion": "",
             "Fotos": []
         }

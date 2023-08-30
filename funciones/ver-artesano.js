@@ -6,9 +6,9 @@ fetch("./datos/artesanos.json")
     data.artesanos.forEach(e => {
         str += "<tr><td><a href='./informacion-artesano.html?Nombre="+e.Nombre+"'>"+e.Nombre+"</a></td>"
         str += "<td>"+e.Celular+"</td>"
-        str += "<td>"+e.Comuna+"</td>"
-        str += "<td>"+e.Comuna+"</td>"
-        str += "<td>"+e.Celular+"</td><tr>"
+        str += "<td>"+e.Comuna+"</td><td>"
+        e.Tipo.forEach(t => {str += t+"<br>"})
+        str += "</td><td>"+e.Celular+"</td><tr>"
     })
     LISTADOARTESANOS.innerHTML = str
 })
