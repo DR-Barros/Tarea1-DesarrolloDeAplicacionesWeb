@@ -1,0 +1,54 @@
+{
+    "artesanos": [
+        {
+            "Nombre": "Jorge Washingthon",
+            "Email": "G.Washingthon@gmai.com",
+            "Celular": "+56954632718",
+            "Region": "Coquimbo",
+            "Comuna": "Coquimbo",
+            "Tipo": [],
+            "Descripcion": "",
+            "Fotos": []
+        },
+        {
+            "Nombre": "James Rodriguez",
+            "Email": "JR5413@chile.cl",
+            "Celular": "+56960504030",
+            "Region": "Atacama",
+            "Comuna": "Caldera",
+            "Tipo": [],
+            "Descripcion": "",
+            "Fotos": []
+        },
+        {
+            "Nombre": "Duvan Zapata",
+            "Email": "DZapatilla@gmail.com",
+            "Celular": "+56945671238",
+            "Region": "Tarapacá",
+            "Comuna": "Iquique",
+            "Tipo": [],
+            "Descripcion": "",
+            "Fotos": []
+        },
+        {
+            "Nombre": "Thiago Mendez",
+            "Email": "ThiagoM@chile.cl",
+            "Celular": "+56944332211",
+            "Region": "Región de Los Ríos",
+            "Comuna": "Valdivia",
+            "Tipo": [],
+            "Descripcion": "",
+            "Fotos": []
+        },
+        {
+            "Nombre": "Arturo Medel",
+            "Email": "King.M@gmail.com",
+            "Celular": "+56990804321",
+            "Region": "Región Aisén del Gral. Carlos Ibáñez del Campo",
+            "Comuna": "Coihaique",
+            "Tipo": [],
+            "Descripcion": "",
+            "Fotos": []
+        }
+    ]
+}
