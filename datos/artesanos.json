@@ -7,8 +7,8 @@
             "Region": "Coquimbo",
             "Comuna": "Coquimbo",
             "Tipo": ["madera"],
-            "Descripcion": "",
-            "Fotos": []
+            "Descripcion": "Las mejores artesanias de la cuarta",
+            "Fotos": ["img.jpg"]
         },
         {
             "Nombre": "James Rodriguez",
