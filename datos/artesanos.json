@@ -8,7 +8,7 @@
             "Comuna": "Coquimbo",
             "Tipo": ["madera"],
             "Descripcion": "Las mejores artesanias de la cuarta",
-            "Fotos": ["img.jpg"]
+            "Fotos": ["img.jpg", "prueba.jpg"]
         },
         {
             "Nombre": "James Rodriguez",
@@ -18,7 +18,7 @@
             "Comuna": "Caldera",
             "Tipo": ["metal", "cuero"],
             "Descripcion": "",
-            "Fotos": []
+            "Fotos": ["prueba.jpg", "prueba.jpg"]
         },
         {
             "Nombre": "Duvan Zapata",
@@ -28,7 +28,7 @@
             "Comuna": "Iquique",
             "Tipo": ["cuero", "joyas"],
             "Descripcion": "",
-            "Fotos": []
+            "Fotos": ["prueba.jpg"]
         },
         {
             "Nombre": "Thiago Mendez",
@@ -38,7 +38,7 @@
             "Comuna": "Valdivia",
             "Tipo": ["madera", "metal"],
             "Descripcion": "",
-            "Fotos": []
+            "Fotos": ["prueba.jpg"]
         },
         {
             "Nombre": "Arturo Medel",
@@ -48,7 +48,7 @@
             "Comuna": "Coihaique",
             "Tipo": ["otro tipo"],
             "Descripcion": "",
-            "Fotos": []
+            "Fotos": ["prueba.jpg"]
         }
     ]
 }
