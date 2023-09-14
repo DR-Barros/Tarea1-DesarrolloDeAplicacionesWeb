@@ -131,7 +131,6 @@ function validar(event){
     if(valido){
         const MSG = document.getElementById("msg")
         const FORM = document.getElementById("formulario")
-        console.log(FORM)
         FORM.style.display = "none"
         let str = "<p>¿Confirma el registro de este hincha?<p>"
         str += "<button id='SI'>Sí, confirmo</button>"

@@ -17,10 +17,11 @@
     </header>
     <div class="container">
         <h2>Inscribete para vender tus artesanias</h2>
-        <form>
+        <form id="formulario">
             <div class="region">
                 <label for="region">Seleccione su región de procedencia: <span id="region-span"></span></label>
                 <select name="region" id="region">
+                    <option value="">-Elija una de las siguientes comunas-</option>
                     <option value="Tarapacá">I Región: Arica y Parinacota</option>
                     <option value="Antofagasta">II Región</option>
                     <option value="Atacama">III Región</option>
@@ -70,13 +71,13 @@
             </div>
             <div class="descripcion">
                 <label for="descripcion">Describas sus artesanias <span id="desc-span"></span></label>
-                <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+                <textarea name="descripcion" id="descripcion" cols="50" rows="4"></textarea>
             </div>
             <div class="fotos">
                 <label for="photo">Seleccione fotos para de sus artesanias <span id="fotos-span"></span></label>
                 <input name="photo" id="photo" type="file" accept="image/png, image/jpeg">
-                <div class="foto2"></div>
-                <div class="foto3"></div>
+                <div id="foto2"></div>
+                <div id="foto3"></div>
             </div>
             <div class="nombre">
                 <label for="name">Ingrese su nombre: <span id="name-span"></span></label>
@@ -93,6 +94,7 @@
 
             <button id="Registrar-Artesano">Registrarse</button>
         </form>
+        <span id="msg"></span>
     </div>
     <footer>
         <p>
