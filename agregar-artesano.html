@@ -19,7 +19,7 @@
         <h2>Inscribete para vender tus artesanias</h2>
         <form>
             <div class="region">
-                <label for="region">Seleccione su región de procedencia:</label>
+                <label for="region">Seleccione su región de procedencia: <span id="region-span"></span></label>
                 <select name="region" id="region">
                     <option value="Tarapacá">I Región: Arica y Parinacota</option>
                     <option value="Antofagasta">II Región</option>
@@ -40,14 +40,14 @@
                 </select>
             </div>
             <div class="comuna">
-                <label for="comuna">Seleccione su comuna</label>
+                <label for="comuna">Seleccione su comuna <span id="comuna-span"></span></label>
                 <select name="comuna" id="comuna" disabled="disabled">
                     <option value="">Elija primero la region</option>
                 </select>
             </div>
             <div class="artesanias">
                 <fieldset>
-                    <legend>Seleccione el tipo de sus artesanias (seleccione máximo 3):</legend>
+                    <legend>Seleccione el tipo de sus artesanias (seleccione máximo 3): <span id="artesania-span"></span></legend>
                     <input type="checkbox" name="artesania" id="mármol" value="mármol">
                     <label for="mármol">mármol</label>
                     <input type="checkbox" name="artesania" id="madera" value="madera">
@@ -69,22 +69,25 @@
                 </fieldset>
             </div>
             <div class="descripcion">
-                <label for="descripcion">Describas sus artesanias</label>
+                <label for="descripcion">Describas sus artesanias <span id="desc-span"></span></label>
                 <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
             </div>
             <div class="fotos">
-                <input type="file" accept="image/png, image/jpeg">
+                <label for="photo">Seleccione fotos para de sus artesanias <span id="fotos-span"></span></label>
+                <input name="photo" id="photo" type="file" accept="image/png, image/jpeg">
+                <div class="foto2"></div>
+                <div class="foto3"></div>
             </div>
             <div class="nombre">
-                <label for="name">Ingrese su nombre:</label>
+                <label for="name">Ingrese su nombre: <span id="name-span"></span></label>
                 <input type="text" name="name" id="name" autocomplete="name" maxlength="80">
             </div>
             <div class="email">
-                <label for="mail">Ingrese su correo electronico:</label>
+                <label for="mail">Ingrese su correo electronico: <span id="mail-span"></span></label>
                 <input type="email" name="mail" id="mail" autocomplete="email" maxlength="30">
             </div>
             <div class="telefono">
-                <label for="phone">Ingrese un celular de contacto</label>
+                <label for="phone">Ingrese un celular de contacto <span id="phone-span"></span></label>
                 <input type="tel" name="phone" id="phone" autocomplete="mobile" maxlength="15">
             </div>
 

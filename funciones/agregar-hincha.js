@@ -139,6 +139,8 @@ function validar(event){
         MSG.innerHTML = str
         const SI = document.getElementById("SI")
         const NO = document.getElementById("NO")
+        // si quiere agregar se avisa que tuvo exito y se grega link a inicio
+        //sino vuelve al inventario
         SI.addEventListener("click", e => {
             str ="<p>Hemos recibido el registro de Hincha. Muchas gracias.</p>"
             str += "<a href='.'>Volver a Inicio </a>"
@@ -148,7 +150,5 @@ function validar(event){
             FORM.style.display = "block"
             MSG.innerHTML = ""
         })
-        // si quiere agregar se avisa que tuvo exito y se grega link a inicio
-        //sino vuelve al inventario
     }
 }
