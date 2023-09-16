@@ -29,12 +29,29 @@ fieldset{
     border-radius: 5px;
     border: solid black 1px;
 }
+
+.boton{
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #f24535;
+    border-radius: 10px;
+    margin: 30px;
+    color: #f24535;
+    background-color: #04d9c4;
+    cursor: pointer;
+}
+.boton:hover{
+    color: #0583f2;
+}
+
 footer{
     padding: 5px;
     text-align: center;
+    background-color: black;
 }
 footer p{
     margin: 0;
+    color: white;
 }
 
 @media (min-width: 420px){
@@ -53,9 +70,7 @@ footer p{
 }
 @media (min-width: 1440px){
     .container{
-        margin: 30px 35px;
-    }
-    fieldset{
-        grid-template-columns: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
+        margin: 30px auto;
+        max-width: 1200px;
     }
 }

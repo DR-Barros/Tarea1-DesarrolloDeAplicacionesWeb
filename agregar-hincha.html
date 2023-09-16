@@ -146,6 +146,7 @@
                 </div>
                 <div class="region">
                     <label for="region">Seleccione su región de procedencia: <span id="region-span"></span></label>
+                    <br>
                     <select name="region" id="region">
                         <option value="">-Elija una de las siguientes comunas-</option>
                         <option value="Tarapacá">I Región: Arica y Parinacota</option>
@@ -168,12 +169,14 @@
                 </div>
                 <div class="comuna">
                     <label for="comuna">Seleccione Región <span id="comuna-span"></span></label>
+                    <br>
                     <select name="comuna" id="comuna" disabled="disabled">
                         <option value="">Elja primero su región</option>
                     </select>
                 </div>
                 <div class="transporte">
                     <label for="transporte">Seleccione su medio de transporte</label>
+                    <br>
                     <select name="transporte" id="transporte">
                         <option value="particular">particular</option>
                         <option value="locomoción publica">locomoción publica</option>
@@ -181,21 +184,25 @@
                 </div>
                 <div class="nombre">
                     <label for="name">Ingrese su nombre: <span id="name-span"></span></label>
+                    <br>
                     <input type="text" name="name" id="name" maxlength="80" autocomplete="name" required>
                 </div>
                 <div class="email">
                     <label for="mail">Ingrese su correo electronico: <span id="email-span"></span></label>
+                    <br>
                     <input type="email" name="mail" id="mail" maxlength="30" autocomplete="email" required>
                 </div>
                 <div class="telefono">
                     <label for="phone">Ingrese un celular de contacto <span id="phone-span"></span></label>
+                    <br>
                     <input type="tel" name="phone" id="phone" maxlength="15" autocomplete="tel" required>
                 </div>
                 <div class="comentarios">
                     <label for="coment">Comentarios adicionales <span id="com-span"></span></label>
-                    <textarea name="coment" id="coment" cols="30" rows="10" maxlength="80"></textarea>
+                    <br>
+                    <textarea name="coment" id="coment" cols="30" rows="3" maxlength="80"></textarea>
                 </div>
-                <button id="Registrar-Hincha">Registrar Hincha</button>
+                <button class="boton" id="Registrar-Hincha">Registrar Hincha</button>
             </form>
         </div>
         <span id="msg"></span>
