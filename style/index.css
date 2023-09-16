@@ -45,16 +45,16 @@ header a{
     border: 3px solid black;
 }
 .sec1{
-    background-color: blue;
+    background-color: #0583f2;
 }
 .sec2{
-    background-color: red;
+    background-color: #f24535;
 }
 .sec3{
-    background-color: aquamarine;
+    background-color: #04d9c4;
 }
 .sec4{
-    background-color: yellow;
+    background-color: #f2b705;
 }
 footer{
     padding: 5px;

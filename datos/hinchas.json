@@ -20,6 +20,16 @@
             "Comentario": "Estoy muy emocionado por poder ir a un Panamericano"
         },
         {
+            "Nombre": "Pedro Pascal",
+            "Region": "Región Metropolitana de Santiago",
+            "Comuna":"Ñuñoa",
+            "Deportes": ["Tiro", "Gimnasia rítmica", "Vela"],
+            "Transporte": "locomoción Pública",
+            "Email": "P.pascal@chile.cl",
+            "Celular": "+56987884321",
+            "Comentario": "Viva chile"
+        },
+        {
             "Nombre": "Humberto Suazo",
             "Region": "Valparaíso",
             "Comuna":"San Antonio",
@@ -46,6 +56,33 @@
             "Transporte": "particular",
             "Email": "LucasAsadi@chile.cl",
             "Celular": "+56955533322"
+        },
+        {
+            "Nombre": "Cristiano Ronaldo",
+            "Region": "Región Metropolitana de Santiago",
+            "Comuna":"La Reina",
+            "Deportes": ["Gimnasia rítmica", "Surf"],
+            "Transporte": "particular",
+            "Email": "CR7@portugal.siu",
+            "Celular": "+56977777777"
+        },
+        {
+            "Nombre": "Francisca Romero",
+            "Region": "Región Metropolitana de Santiago",
+            "Comuna":"Cerrillos",
+            "Deportes": ["Vela", "Surf", "Natación"],
+            "Transporte": "particular",
+            "Email": "FR@chile.cl",
+            "Celular": "+56943521678"
+        },
+        {
+            "Nombre": "Fernanda Reyes",
+            "Region": "Región Metropolitana de Santiago",
+            "Comuna":"Providencia",
+            "Deportes": ["Marcha", "Básquetbol", "Balonmano"],
+            "Transporte": "particular",
+            "Email": "FerR@chile.cl",
+            "Celular": "+56948521178"
         }
     ]
 }
