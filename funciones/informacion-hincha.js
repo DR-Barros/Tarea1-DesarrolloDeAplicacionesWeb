@@ -18,7 +18,7 @@ fetch("./datos/hinchas.json")
             comuna.innerText = e.Comuna
             transporte.innerText = e.Transporte
             let depor = ""
-            e.Deportes.forEach(d => depor+=" "+d+" ")
+            e.Deportes.forEach(d => depor+="<br>"+d+" ")
             deportes.innerHTML = depor
             mail.innerText = e.Email
             phone.innerText = e.Celular

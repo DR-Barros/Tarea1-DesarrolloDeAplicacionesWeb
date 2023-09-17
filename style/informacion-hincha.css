@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    position: relative;
+    min-height: 100vh;
 }
 header{
     margin: 0;
@@ -13,10 +15,47 @@ header a{
     padding: 5px;
 }
 
+.container{
+    text-align: center;
+    margin: 50px auto;
+}
+
+.container h2{
+    margin: 50px auto;
+}
+
+.container p{
+    font-weight: bold;
+}
+
+.container span{
+    font-weight: 400;
+}
+
+.container .comentarios{
+    margin-bottom: 50px;
+}
+
+.boton{
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #f24535;
+    border-radius: 10px;
+    margin: 25px;
+    text-decoration: none;
+    color: #f24535;
+    background-color: #04d9c4;
+}
+.boton:hover{
+    color: #0583f2;
+}
+
+
 
 footer{
     padding: 5px;
     text-align: center;
+    background-color: black;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -24,4 +63,5 @@ footer{
 }
 footer p{
     margin: 0;
+    color: white;
 }
